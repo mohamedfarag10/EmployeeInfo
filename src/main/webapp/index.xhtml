@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Employee Management</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h:panelGrid columns="2">
+            <p:outputLabel for="gender" value="Gender:"/>
+            <p:selectOneMenu id="gender" value="#{employeeBean.gender}">
+                <f:selectItem itemLabel="Select Gender" itemValue=""/>
+                <f:selectItem itemLabel="Male" itemValue="Male"/>
+                <f:selectItem itemLabel="Female" itemValue="Female"/>
+            </p:selectOneMenu>
+
+            <p:outputLabel for="name" value="Name:"/>
+            <p:inputText id="name" value="#{employeeBean.name}"/>
+
+            <p:outputLabel for="department" value="Department:"/>
+            <p:selectOneMenu id="department" value="#{employeeBean.departmentId}">
+                <f:selectItem itemLabel="Select Department" itemValue=""/>
+                <f:selectItems value="#{employeeBean.departments}" var="dept" itemLabel="#{dept.name}" itemValue="#{dept.id}"/>
+            </p:selectOneMenu>
+
+            <p:commandButton value="Add Employee" action="#{employeeBean.addEmployee}" ajax="false"/>
+        </h:panelGrid>
+
+        <p:dataTable var="employee" value="#{employeeBean.employees}">
+            <p:column headerText="Name">
+                #{employee.name}
+            </p:column>
+            <p:column headerText="Gender">
+                #{employee.gender}
+            </p:column>
+            <p:column headerText="Department">
+                #{employee.department.name}
+            </p:column>
+        </p:dataTable>
+    </h:form>
+</h:body>
+</html>
