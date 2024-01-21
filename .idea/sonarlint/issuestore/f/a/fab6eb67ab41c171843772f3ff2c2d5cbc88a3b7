@@ -1,2 +1,4 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¥şÿæ
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¥şÿæ8¹ğ¯æÒ1
+e
+java:S2259"CA "NullPointerException" could be thrown; "query" is nullable here.(¬ÄÂØşÿÿÿÿ8ÁëüæÒ1

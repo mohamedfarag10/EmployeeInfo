@@ -4,8 +4,6 @@
 X
 (src/main/webapp/WEB-INF/faces-config.xml,9\2\921ab541b29cd2aba50bbba38a0af79890ebe16a
 O
-src/main/webapp/index.jsf.xhtml,9\0\9066204b9d301814c37f79a0e3208ab1881c0c2d
-O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 d
 4src/main/java/com/example/employee/HelloServlet.java,2\7\27e96950411b5a1ca8370d2c9c3553630f2c8700
@@ -23,3 +21,9 @@ Q
 !src/main/webapp/WEB-INF/beans.xml,8\3\83008b1a88ba03a2548bb5b9ad0768c6c307d36c
 Q
 !src/main/java/Model/Employee.java,7\0\70ab5299a3e52c9007815ee13f20cdba8c678493
+N
+src/main/webapp/employee.xhtml,9\3\93f55b8642a25af9d50d7e0099ad500fd16c2cea
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e

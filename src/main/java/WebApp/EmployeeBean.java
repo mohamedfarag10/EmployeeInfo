@@ -3,6 +3,7 @@ package WebApp;
 import Model.Department;
 import Model.Employee;
 import Service.EmployeeService;
+import Service.imp.EmployeeServiceImpl;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
@@ -26,6 +27,7 @@ public class EmployeeBean {
 
     @PostConstruct
     public void init() {
+        EmployeeServiceImpl employeeService=new EmployeeServiceImpl();
         employees = employeeService.getAllEmployees();
         departments = employeeService.getAllDepartments();
     }

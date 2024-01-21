@@ -17,7 +17,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<Employee> getAllEmployees() {
-        Query query = entityManager.createQuery("SELECT e FROM Employee e");
+        Query query = null;
+        try {
+             query = entityManager.createQuery("SELECT e FROM Employee e");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return query.getResultList();
     }
 
@@ -36,5 +41,4 @@ public class EmployeeServiceImpl implements EmployeeService {
     public void addEmployee(Employee employee) {
         entityManager.persist(employee);
     }
-
 }
